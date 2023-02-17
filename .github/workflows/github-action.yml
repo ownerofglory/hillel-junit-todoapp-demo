@@ -50,5 +50,5 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
       - name: Build project
-        run: mvn compile --batch-mode sonar:sonar -Dsonar.login=${{ secrets.SONARQUBE_LOGIN_KEY }} -Dsonar.projectKey=$${{ secrets.SONAR_PROJECT_KEY }} -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }}
+        run: mvn package --batch-mode sonar:sonar -Dsonar.login=${{ secrets.SONARQUBE_LOGIN_KEY }} -Dsonar.projectKey=$${{ secrets.SONAR_PROJECT_KEY }} -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }}
 
