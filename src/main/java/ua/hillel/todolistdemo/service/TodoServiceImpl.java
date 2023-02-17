@@ -22,7 +22,8 @@ public class TodoServiceImpl implements TodoService {
 
     @Override
     public List<Todo> getTodosByList(TodoList todoList) throws TodoAppGeneralException {
-        List<Todo> todos = repo.getTodosByListId(todoList.getId());
+        Integer id = todoList.getId();
+        List<Todo> todos = repo.getTodosByListId(id);
         return todos;
     }
 
