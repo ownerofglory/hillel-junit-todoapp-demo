@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import ua.hillel.todolistdemo.ui.component.TodoListListView?>
+<?import ua.hillel.todolistdemo.ui.component.TodoListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<VBox fx:id="root" fx:controller="ua.hillel.todolistdemo.ui.MainUiController" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <GridPane>
+<!--            header-->
+            <HBox fx:id="listHeader" GridPane.rowIndex="0" GridPane.columnIndex="0">
+                <Label fx:id="listHeaderLabel">Lists</Label>
+            </HBox>
+            <HBox fx:id="todoHeader" GridPane.rowIndex="0" GridPane.columnIndex="1">
+                <Label fx:id="todoHeaderLabel">Todos</Label>
+            </HBox>
+
+            <VBox fx:id="sidebar" GridPane.rowIndex="1" GridPane.columnIndex="0">
+                <HBox fx:id="listInputBox">
+                    <TextField fx:id="listNameInput" promptText="Enter list name"/>
+                    <Button fx:id="addListButton">Add</Button>
+                </HBox>
+                <TodoListListView fx:id="todoListView">
+
+                </TodoListListView>
+            </VBox>
+            <VBox fx:id="main" GridPane.rowIndex="1" GridPane.columnIndex="1">
+                <HBox fx:id="todoInputBox" >
+                    <TextField fx:id="todoInput" promptText="What are you going to do today? :)"/>
+                    <Button fx:id="addTodoButton">Add</Button>
+                </HBox>
+                <HBox fx:id="listNameBox">
+                    <Label fx:id="listNameLabel">List name</Label>
+                </HBox>
+                <TodoListView fx:id="todoView">
+
+                </TodoListView>
+            </VBox>
+        </GridPane>
+    </children>
+</VBox>

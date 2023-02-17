@@ -1,0 +1,92 @@
+#root {
+    -fx-min-width: 800px;
+}
+
+#sidebar {
+    -fx-min-width: 400px;
+}
+
+#listInputBox {
+    -fx-padding: 12px;
+}
+
+#main {
+    -fx-min-width: 800px;
+    -fx-background-color: lightgray;
+}
+
+#listHeader {
+    -fx-min-height: 40px;
+    -fx-padding: 12px;
+    -fx-background-color: #FF4F02;
+    -fx-stroke-width: 0px 1px 0px 0px;
+}
+
+#listHeaderLabel {
+    -fx-font-size: 20px;
+    -fx-text-fill: #F0F0F0
+}
+
+#todoHeaderLabel {
+    -fx-font-size: 20px;
+    -fx-text-fill: #F0F0F0
+}
+
+#todoHeader {
+    -fx-min-height: 40px;
+    -fx-padding: 12px;
+    -fx-background-color: #FF4F02;
+    -fx-stroke: gray;
+    -fx-stroke-width: 0px 0px 0px 1px;
+}
+
+#listInputBox {
+    -fx-padding: 12px 12px 60px 12px;
+    -fx-spacing: 20px;
+}
+
+#listNameInput {
+    -fx-min-width: 280px;
+    -fx-min-height: 36px;
+    -fx-font-size: 18;
+}
+
+#addListButton {
+    -fx-min-height: 36px;
+    -fx-min-width: 72px;
+    -fx-font-size: 18px;
+}
+
+#todoListView {
+    -fx-min-height: 460px;
+}
+
+#todoInputBox {
+    -fx-padding: 12px;
+    -fx-spacing: 20px;
+}
+
+#todoInput {
+    -fx-min-width: 680px;
+    -fx-min-height: 36px;
+    -fx-font-size: 18;
+}
+
+#addTodoButton {
+     -fx-min-height: 36px;
+     -fx-min-width: 72px;
+     -fx-font-size: 18px;
+}
+
+#todoView {
+    -fx-min-height: 460px;
+}
+
+#listNameBox {
+    -fx-padding: 12px;
+}
+
+#listNameLabel {
+    -fx-font-size: 20px;
+    -fx-font-family: arial;
+}
